@@ -112,6 +112,9 @@ form {
   border-radius: 8px;
   border: 1px solid #e6e6f0;
   background: #fafafc;
+
+  font-size: 14px;
+  padding-left: 10px;
 }
 
 .box_email,
@@ -129,6 +132,14 @@ form {
   font-size: 12px;
   line-height: 20px;
   margin-left: 9px;
+  transition: 0.4s;
+}
+
+.box_email label span:hover,
+.box_password label span:hover,
+.box_name_mentor label span:hover,
+.box_time label span:hover {
+  color: #898692;
 }
 
 .container__fildset__secondary legend {
@@ -212,5 +223,15 @@ footer .btn {
 }
 
 footer .btn:hover {
-    background: #963145;
+  background: #963145;
+}
+
+.box_firstname label .mandatory,
+.box_surname label .mandatory,
+.box_email label .mandatory,
+.box_password label .mandatory,
+.box_name_mentor label .mandatory,
+.box_time label .mandatory {
+  color: #f90a3a;
+  font-size: 18px;
 }
